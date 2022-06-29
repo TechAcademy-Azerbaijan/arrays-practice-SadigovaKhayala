@@ -1,9 +1,12 @@
-const prompt = require('prompt');
-prompt.start();
+let arr=[0,1,-2,1,0,0,3];
 
+let temp=[]
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+for(i=0;i<arr.length;i++){
+    if(!temp.includes(arr[i])){
+        temp.push(arr[i])
+    }
+   
+}
+
+console.log(temp);
